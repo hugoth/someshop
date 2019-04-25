@@ -32,4 +32,6 @@ app.all("*", (req, res) => {
   res.status(404).json({});
 });
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000, () => {
+  console.log("server is on fire");
+});
