@@ -29,7 +29,7 @@ const reviewRoutes = require("./routes/review_routes");
 app.use(reviewRoutes);
 
 app.all("*", (req, res) => {
-  res.status(404).json({});
+  res.status(404).json({ message: "Hello world" });
 });
 
 app.listen(process.env.PORT || 3000, () => {
